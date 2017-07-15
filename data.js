@@ -5,8 +5,8 @@ const data = {
   hours: 'Mon-Sat 11:30am - 2:00am,\n Sun 11:30am - 1:00am',
   phone: '(425) 290-6624',
   social: {
-    facebook: 'https://www.yelp.com/biz/razzals-sports-bar-and-grill-everett',
-    yelp: 'https://www.facebook.com/RazzalsEverett/',
+    yelp: 'https://www.yelp.com/biz/razzals-sports-bar-and-grill-everett',
+    facebook: 'https://www.facebook.com/RazzalsEverett/',
     google: 'https://www.google.com/maps/place/Razzals+Bar+%26+Grill/@47.8971496,-122.2549635,17z/data=!3m1!4b1!4m5!3m4!1s0x549006b1e3b05341:0x9f0d2a1e1b03a9e6!8m2!3d47.8971496!4d-122.2527748',
   },
   events: [
