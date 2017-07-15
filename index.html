@@ -1,0 +1,100 @@
+<!DOCTYPE html >
+<html dir='ltr' lang='en' ng-app='app' ng-controller='ctrl as ctrl'>
+  <head>
+    <title>{{ctrl.data.name}} {{ctrl.data.description}}</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+    <script src='data.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato|Lora|Roboto+Slab:700' rel='stylesheet'>
+    <link href='style.css' rel='stylesheet'>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-102633905-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    </head>
+  <body>
+    <div id='business'>
+      <div class='wrapper'>
+        <div class='name'>{{ctrl.data.name}}</div>
+        <div class='description'>- {{ctrl.data.description}} -</div>
+        <div class='social'>
+          <a href='{{ctrl.data.social.facebook}}' class='facebook'></a>
+          <a href='{{ctrl.data.social.yelp}}' class='yelp'></a>
+          <a href='{{ctrl.data.social.google}}' class='google'></a>
+        </div>
+      </div>
+    </div>
+    <div class='even'>
+      <div class='wrapper'>
+        <div class='card-wrapper'>
+          <div class='card'>
+            <span class='name'>Location</span>
+            <span class='value'>{{ctrl.data.location}}</span>
+          </div>
+          <div class='card'>
+            <span class='name'>Hours</span>
+            <span class='value'>{{ctrl.data.hours}}</span>
+          </div>
+          <div class='card'>
+            <span class='name'>Contacts</span>
+            <span class='value'>{{ctrl.data.phone}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='odd' id='events'>
+      <div class='wrapper'>
+        <h2>Events</h2>
+        <div ng-repeat='event in ctrl.data.events'>
+          <li>{{event}}
+        </div>
+      </div>
+    </div>
+    <div class='menu even'>
+      <div class='wrapper'>
+        <h2>Menu</h2>
+        <div ng-repeat='group in ctrl.data.menu.groups'>
+          <menu-group>
+            <menu-group-name>{{group.name}}</menu-group-name>
+            <menu-group-description>{{group.description}}</menu-group-description>
+          </menu-group>
+          <ul>
+            <li ng-repeat='item in group.items'>
+              <span class='name'>{{item.name}}</span>
+              <span class='favorite' ng-if='item.favorite'>
+              </span>
+              <div ng-repeat='subitem in item.items' class='subitem'>
+                <span class='name'>{{subitem.name}}</span>
+                <span class='cost'>{{subitem.cost}}</span>
+              </div>
+              <span class='cost'>{{item.cost}}</span>
+              <span class='description'>{{item.description}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class='odd'>
+      <div class='wrapper'>
+        <div class='footer-name'>
+          {{ctrl.data.name}}
+          {{ctrl.data.description}}
+        </div>
+        <div class='footer-description'>
+          {{ctrl.data.location}}</br>
+          {{ctrl.data.hours}}</br>
+          Copyright 2017. All rights reserved
+      </div>
+    </footer>
+    <script>
+      angular.module('app', [])
+        .controller('ctrl', function($window) {
+          this.data = data;
+        });      
+    </script>
+  </body>
+</html>

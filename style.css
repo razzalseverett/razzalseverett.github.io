@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+}
+h2 {
+  font-size: 2.2em;
+  text-align: center;
+  margin: 0 0 40px 0;
+  font-family: 'Lora', serif;
+  font-weight: normal;
+}
+menu-group {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  line-height: 1;
+}
+menu-group-name {
+  display: block;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+menu-group-description {
+  font-size: smaller;
+}
+.wrapper {
+  max-width: 900px;
+  padding: 40px;
+  margin: auto;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;    
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+.menu li {
+  margin: 0 20px 20px 20px;
+  width: 250px;
+}
+.menu li .name {
+  
+}
+.menu li .cost {
+  float: right;
+}
+.menu .subitem .name {
+  font-size: smaller;
+}
+.menu .description {
+  margin-top: 5px;
+  display: block;
+  font-size: smaller;
+}
+.odd {
+  background-color: #E0E0E0;
+}
+#events li {
+  text-align: center;
+}
+footer {
+  margin: auto;
+  text-align: center;
+}
+footer .footer-name {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  line-height: 1;
+}
+footer .footer-description {
+  font-size: smaller;
+  padding-top: 1.5em;
+}
+#business {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1;
+  padding: 2em 0;
+  text-align: center;
+}
+#business .background-img {
+  position: absolute;
+  top: 0;
+  -webkit-filter: opacity(40%); /* Safari 6.0 - 9.0 */
+  filter: opacity(40%);
+  width: 100%;
+  clip: rect(0, 2000px, 340px, 0);
+  z-index: 1;
+}
+#business .name {
+  font-size: 5em;
+}
+#business .description {
+  font-size: 2em;
+}
+#business .social {
+  margin-top: 1em;
+}
+#business .social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+}
+/* https://www.iconfinder.com/iconsets/black-white-social-media */
+#business .facebook {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iRmxhdF9jb3B5Ij48Zz48Zz48cGF0aCBkPSJNMTYsMzEuNjI1Yy04LjYxNiwwLTE1LjYyNS03LjAxLTE1LjYyNS0xNS42MjVDMC4zNzUsNy4zODQsNy4zODQsMC4zNzUsMTYsMC4zNzUgICAgIGM4LjYxNSwwLDE1LjYyNSw3LjAwOSwxNS42MjUsMTUuNjI1QzMxLjYyNSwyNC42MTUsMjQuNjE1LDMxLjYyNSwxNiwzMS42MjV6IiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTE2LDAuNzVjOC40MDksMCwxNS4yNSw2Ljg0MSwxNS4yNSwxNS4yNVMyNC40MDksMzEuMjUsMTYsMzEuMjVTMC43NSwyNC40MDksMC43NSwxNlM3LjU5MSwwLjc1LDE2LDAuNzUgICAgICBNMTYsMEM3LjE2MywwLDAsNy4xNjMsMCwxNmMwLDguODM2LDcuMTYzLDE2LDE2LDE2czE2LTcuMTY0LDE2LTE2QzMyLDcuMTYzLDI0LjgzNywwLDE2LDBMMTYsMHoiIGZpbGw9IiNFNUU1RTUiLz48L2c+PC9nPjxwYXRoIGQ9Ik0xMy42OSwyNC45MDNoMy42Nzl2LTguOTA0aDIuNDU0bDAuMzI1LTMuMDY4aC0yLjc3OWwwLjAwNC0xLjUzNmMwLTAuOCwwLjA3Ni0xLjIyOSwxLjIyNC0xLjIyOWgxLjUzNCAgIFY3LjA5N2gtMi40NTVjLTIuOTQ5LDAtMy45ODYsMS40ODktMy45ODYsMy45OTJ2MS44NDJoLTEuODM4djMuMDY5aDEuODM4VjI0LjkwM3oiIGZpbGw9IiMzMzMzMzMiLz48L2c+PC9zdmc+);
+}
+#business .yelp {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDY0IDY0IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iTGF5ZXJfMyI+PGc+PGc+PHBhdGggZD0iTTMyLjAwMSw2My4yNTFjLTE3LjIzLDAtMzEuMjUtMTQuMDItMzEuMjUtMzEuMjVzMTQuMDItMzEuMjUsMzEuMjUtMzEuMjVzMzEuMjUsMTQuMDIsMzEuMjUsMzEuMjUgICAgIFM0OS4yMzEsNjMuMjUxLDMyLjAwMSw2My4yNTF6IiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTMyLDEuNWMxNi44MTgsMCwzMC41LDEzLjY4MiwzMC41LDMwLjVTNDguODE4LDYyLjUsMzIsNjIuNVMxLjUsNDguODE4LDEuNSwzMlMxNS4xODIsMS41LDMyLDEuNSBNMzIsMCAgICAgQzE0LjMyNywwLDAsMTQuMzI3LDAsMzJjMCwxNy42NzMsMTQuMzI3LDMyLDMyLDMyczMyLTE0LjMyNywzMi0zMkM2NCwxNC4zMjcsNDkuNjczLDAsMzIsMEwzMiwweiIgZmlsbD0iI0U1RTVFNSIvPjwvZz48L2c+PGc+PGcgaWQ9ImczNzgxXzFfIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOTcuMjIwMzQsMCkiPjxwYXRoIGQ9Ik0tMjc1LjM4OCwxMy4zMTFjMi4wNzUtMS42MzEsNi4wNjItMi4wOTgsNy43MDMtMS43NzljMS42NDMsMC4zMTYsMi41MDEsMS4yMzUsMi41MTEsMi4zNTMgICAgIGwwLjA5NSwxNC4yNjFjMC4wMDcsMS4xMjEtMC41NzQsMi4xNS0xLjI5NCwyLjI4OGMtMC43MjMsMC4xMzYtMS43ODctMC41My0yLjM3Mi0xLjQ4M2wtNy40ODMtMTIuMjI3ICAgICBDLTI3Ni44MDcsMTUuNzY4LTI3Ny45NzgsMTUuMzQ4LTI3NS4zODgsMTMuMzExTC0yNzUuMzg4LDEzLjMxMXogTS0yNzcuODcyLDQwLjQyOWw3LjUzNC0yLjY2NiAgICAgYzEuMDQ5LTAuMzczLDEuOTktMS40MDksMi4wOTUtMi4zMDhjMC4xMDEtMC45LTAuNjYxLTEuOTY4LTEuNjk2LTIuMzc3bC03Ljk1OC0zLjE1NmMtMS4wMzYtMC40MS0yLjIzMSwwLjU2MS0yLjU0NiwyLjE1ICAgICBjMCwwLTAuMTksNS41MzMsMCw2LjY3OUMtMjgwLjI1MiwzOS44OTYtMjc4LjkyMiw0MC44MDItMjc3Ljg3Miw0MC40MjlMLTI3Ny44NzIsNDAuNDI5eiBNLTI2NC43MzIsNDEuNzYxICAgICBjMC4wMjEtMS4xMjMtMC41NzgtMi4wOTItMS4zMzItMi4xNjJjLTAuNzU2LTAuMDctMS45NTUsMC41NzQtMi42NywxLjQzbC01LjI1NSw2LjMwMWMtMC43MTUsMC44NTYtMC4zNiwyLjg2NywwLjY4MywzLjI0OCAgICAgbDUuNDk1LDEuOTA4YzEuMDQ2LDAuMzgxLDIuODg4LTAuNzQ1LDIuOTA5LTEuODY1TC0yNjQuNzMyLDQxLjc2MUwtMjY0LjczMiw0MS43NjF6IE0tMjUxLjY3LDQwLjI5NGwtNi41ODktMS44OTQgICAgIGMtMS4wNjgtMC4zMDctMi4yODEtMC4yNzgtMi42OTIsMC4wN2MtMC40MTIsMC4zNDMtMC4zMDgsMS40MywwLjIyOSwyLjQxbDQuMTU5LDcuNjExYzAuNTM3LDAuOTgsMi42ODgsMC44MTIsMy4yOC0wLjEzOSAgICAgYzAsMCwyLjUwNy0zLjY5NywyLjk2Ny01LjA4NEMtMjQ5Ljg1NCw0MS44NzgtMjUwLjYwMiw0MC42MDEtMjUxLjY3LDQwLjI5NEwtMjUxLjY3LDQwLjI5NHogTS0yNTAuMDY1LDI5LjU5MyAgICAgYy0wLjI5Ny0wLjk2My0yLjM1Ny0zLjgwMS0zLjQ3My00Ljc2OGMtMS4xMTQtMC45Ny0yLjM5LTAuODQ5LTMuMTA4LDAuMDAzbC00LjI0Niw1LjA1OWMtMC43MiwwLjg1MS0wLjkxMiwyLjIwMi0wLjQzMywyLjk5NSAgICAgYzAuNDc5LDAuNzk0LDEuNzU5LDEuMjQzLDIuODQ0LDFsNy4zNDUtMS4zNjJDLTI0OS44MTEsMzIuMjAxLTI0OS43NjMsMzAuNTU1LTI1MC4wNjUsMjkuNTkzTC0yNTAuMDY1LDI5LjU5M3oiIGZpbGw9IiMzMzMzMzMiIGlkPSJZZWxwXzFfIi8+PC9nPjwvZz48L2c+PC9zdmc+);
+}
+#business .google {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzIgMzIiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBpZD0iRmxhdF9jb3B5Ij48Zz48Zz48cGF0aCBkPSJNMTYuMDA1LDMxLjYyNUM3LjM5LDMxLjYyNSwwLjM4LDI0LjYxNSwwLjM4LDE2UzcuMzksMC4zNzUsMTYuMDA1LDAuMzc1UzMxLjYzLDcuMzg1LDMxLjYzLDE2ICAgICBTMjQuNjIsMzEuNjI1LDE2LjAwNSwzMS42MjV6IiBmaWxsPSIjRkZGRkZGIi8+PHBhdGggZD0iTTE2LjAwNSwwLjc1YzguNDA5LDAsMTUuMjUsNi44NDEsMTUuMjUsMTUuMjVzLTYuODQxLDE1LjI1LTE1LjI1LDE1LjI1UzAuNzU1LDI0LjQwOSwwLjc1NSwxNiAgICAgUzcuNTk2LDAuNzUsMTYuMDA1LDAuNzUgTTE2LjAwNSwwYy04LjgzNywwLTE2LDcuMTYzLTE2LDE2YzAsOC44MzYsNy4xNjMsMTYsMTYsMTZzMTYtNy4xNjQsMTYtMTYgICAgIEMzMi4wMDUsNy4xNjMsMjQuODQyLDAsMTYuMDA1LDBMMTYuMDA1LDB6IiBmaWxsPSIjRTVFNUU1Ii8+PC9nPjwvZz48cGF0aCBkPSJNMjQuNDgyLDE0LjM0NGMwLjExMSwwLjU5LDAuMTcxLDEuMjA5LDAuMTcxLDEuODU0YzAsNS4wNDQtMy4zNzcsOC42MzEtOC40NzYsOC42MzEgICBjLTQuODc4LDAtOC44My0zLjk1Mi04LjgzLTguODNzMy45NTItOC44Myw4LjgzLTguODNjMi4zODQsMCw0LjM3NiwwLjg3Nyw1LjkwNSwyLjMwMWwtMi40ODksMi40ODl2LTAuMDA2ICAgYy0wLjkyNy0wLjg4My0yLjEwMi0xLjMzNi0zLjQxNi0xLjMzNmMtMi45MTQsMC01LjI4MSwyLjQ2MS01LjI4MSw1LjM3NWMwLDIuOTEzLDIuMzY4LDUuMzgxLDUuMjgxLDUuMzgxICAgYzIuNjQ0LDAsNC40NDItMS41MTIsNC44MTMtMy41ODdoLTQuODEzdi0zLjQ0NEwyNC40ODIsMTQuMzQ0TDI0LjQ4MiwxNC4zNDR6IiBmaWxsPSIjMzMzMzMzIi8+PC9nPjwvc3ZnPg==);
+}
+.favorite {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHdpZHRoPSIxOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTkgMTEuM2wzLjcxIDIuNy0xLjQyLTQuMzZMMTUgN2gtNC41NUw5IDIuNSA3LjU1IDdIM2wzLjcxIDIuNjRMNS4yOSAxNHoiLz4gICAgPHBhdGggZD0iTTAgMGgxOHYxOEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;        
+}
+.card {
+  width: 250px;
+  font-size: 0.85em;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+.card > .name {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+.card > .value {
+  text-align: center;
+  padding-top: 12px;
+  display: block;
+  white-space: pre-wrap;
+}
