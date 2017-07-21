@@ -42,7 +42,7 @@
           </div>
           <div class='card'>
             <span class='name'>Contacts</span>
-            <span class='value'>{{ctrl.data.phone}}</span>
+            <a class='value' href='tel:{{ctrl.tel}}'>{{ctrl.data.phone}}</a>
           </div>
         </div>
       </div>
@@ -95,7 +95,8 @@
       angular.module('app', [])
         .controller('ctrl', function($window) {
           this.data = data;
-        });      
+          this.tel = data.phone.replace(/[-\s\(\)]/g, '');
+        });
     </script>
   </body>
 </html>

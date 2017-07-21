@@ -104,6 +104,10 @@ footer .footer-description {
   clip: rect(0, 2000px, 340px, 0);
   z-index: 1;
 }
+a[href^="tel:"] {
+  color: black;
+  text-decoration: none;
+}
 #business .name {
   font-size: 5em;
 }
