@@ -3,6 +3,7 @@
   <head>
     <title>Razzals Bar and Grill</title>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
     <script src='data.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Lato|Lora|Roboto+Slab:700' rel='stylesheet'>
@@ -58,10 +59,10 @@
       <div class='wrapper'>
         <h2>Menu</h2>
         <div ng-repeat='group in ctrl.data.menu.groups'>
-          <menu-group>
-            <menu-group-name>{{group.name}}</menu-group-name>
-            <menu-group-description>{{group.description}}</menu-group-description>
-          </menu-group>
+          <div class='menu-group'>
+            <div class='name'>{{group.name}}</div>
+            <div class='description'>{{group.description}}</div>
+          </div>
           <ul>
             <li ng-repeat='item in group.items'>
               <span class='name'>{{item.name}}</span>

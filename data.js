@@ -72,8 +72,6 @@ const data = {
             cost: 10.49,
             description: 'Grilled chicken breast topped with bacon, Swiss cheese, lettuce, tomato, and red onion',
           },
-          {},
-          {},
         ],
       },
       {
@@ -115,10 +113,6 @@ const data = {
             name: 'Guacamole Burger', 
             cost: 10.99, 
             description: '⅓ lb house-made chuck patty topped with our house-made guacamole, Swiss cheese, bacon, lettuce, tomato, and red onion',
-          },
-          {
-          },
-          {
           },
         ],
       },
@@ -187,8 +181,6 @@ const data = {
             cost: 16.99,
             description: 'Dungeness crab and scallops sauteed with mushrooms, green and red peppers in a creamy Alfredo sauce (served a la carte)'
           },
-          {
-          },
         ],
       },
       {
@@ -255,8 +247,6 @@ const data = {
             name: 'Crispy Chicken Salad', 
             cost: 13.99,
             description: 'Salad greens topped with crispy chicken slices, tomato and mixed cheese with your choice of dressing',
-          },
-          {
           },
         ],
       },
@@ -382,8 +372,6 @@ const data = {
             cost: 9.99,
             description: 'Sriracha breaded chicken bites fried golden and served with our house-made sriracha ranch',
           },
-          {},
-          {},
         ],
       },
     ],

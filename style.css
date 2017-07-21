@@ -10,21 +10,21 @@ h2 {
   font-family: 'Lora', serif;
   font-weight: normal;
 }
-menu-group {
+.menu-group {
   display: block;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
   line-height: 1;
 }
-menu-group-name {
+.menu-group > .name {
   display: block;
   font-size: 1.5em;
   line-height: 1;
   margin: 0;
   font-family: 'Lora', serif;
 }
-menu-group-description {
+.menu-group > .description {
   font-size: smaller;
 }
 .wrapper {
@@ -44,12 +44,18 @@ menu-group-description {
 li {
   list-style-type: none;
 }
-.menu li {
-  margin: 0 20px 20px 20px;
-  width: 250px;
+@media (min-width: 660px) {
+  .menu li {
+    margin: 0 20px 20px 20px;
+    width: 250px;
+  }
 }
-.menu li .name {
-  
+@media (max-width: 659px) {
+  .menu li {
+    margin: 0 0 1em 0;
+    max-width: 400px;
+    width: 100%;
+  }  
 }
 .menu li .cost {
   float: right;
